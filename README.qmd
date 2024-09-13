@@ -29,7 +29,7 @@ knitr::opts_chunk$set(
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 <!-- badges: end -->
 
-This repository holds materials for one of my conference presentations 
+This repository holds materials for one of my professional presentations 
 [@Pierce-RN8655]. Its primary purpose is for me to use version control tools 
 while developing my slides, but its secondary purposes include distributing the 
 slides to my audience and demonstrating how to use Quarto to create slides. I 
@@ -96,7 +96,7 @@ The repository is set up as an
       it manually: just re-knit `README.Rmd` to update it. In R Studio, you can 
       read the formatted version by opening the file and clicking the Preview 
       button.
-    * `README.Rmd`: This file gives an introduction to the repository. Rendering
+    * `README.qmd`: This file gives an introduction to the repository. Rendering
       it produces the `README.md` file and opens the preview automatically. 
     * `references.bib`: This is a BibTeX file containing citation data for 
       papers, software, etc. that we want to cite anywhere in our Quarto 

@@ -87,7 +87,7 @@ project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-RStudio-P
     Do not edit it manually: just re-knit `README.Rmd` to update it. In
     R Studio, you can read the formatted version by opening the file and
     clicking the Preview button.
-  - `README.Rmd`: This file gives an introduction to the repository.
+  - `README.qmd`: This file gives an introduction to the repository.
     Rendering it produces the `README.md` file and opens the preview
     automatically.
   - `references.bib`: This is a BibTeX file containing citation data for
