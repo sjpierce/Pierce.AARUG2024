@@ -55,8 +55,8 @@ library(kableExtra) # Functions for formatting nice tables.
 I've organized this talk around answering three questions that you're probably
 already thinking about right now. They are: "What do you mean by reproducible?"
 "Why should we aim for reproducibility?", and "How do we achieve
-reproducibility?" Then I'm going to do a demonstration. Let's get started with
-the first question.
+reproducibility?" After answering those questions, I'm going to do a 
+demonstration. 
 :::
 
 ::: {style="text-align: right;"}
@@ -66,18 +66,23 @@ Let's define some concepts.
 <br> <br> <br> <br> <br>
 :::
 
+::: {.notes}
+The first question is "What do you mean by reproducible?" Let's define some 
+concepts to set the stage for the rest of the talk. 
+:::
+
 ## Reproducible Research (RR)
 ... is achieved when investigators *share all the materials required to exactly 
 recreate the findings* so that others can verify them or conduct alternative 
 analyses.
 
 ::: {.notes}
-I'll set the stage with a definition. Reproducible research is research for 
-which the investigators have shared all the materials required to exactly
-recreate the findings so that others can verify them or conduct alternative
-analyses. While there are differences between research and evaluation writ
-broadly, reproducibility is just as valuable in--and applicable to--evaluation 
-work as it is in research.
+Reproducible research is research for which the investigators have shared all
+the materials required to exactly recreate the findings so that others can
+verify them or conduct alternative analyses. Some of you may work in the private 
+sector rather than academia. This is still a worthwhile goal even if you work in 
+a business and are creating statistical reports that will not turn into academic 
+publications. That just means your audience may be smaller.
 :::
 
 ## Statistical Results Can Be:
@@ -149,9 +154,10 @@ RR is a product of *how we work*, not which methods we use.
 ::: {.notes}
 Reproducible research is a product of the research process that’s presumably
 independent of whether we use quantitative, qualitative, or mixed methods. What
-matters is how we work and share the materials. However, I suspect it’s easier
-to apply the principles to quantitative methods and those are my forte as a
-statistician, so I'll focus on that route to reproducibility today.
+matters is how we work and share the materials. I suspect it’s easier to apply 
+the principles to quantitative methods and those are my forte as a 
+statistician--and probably yours as R users--so I'll focus on that route to 
+reproducibility today.
 :::
 
 # Why aim for <br> reproducibility? {background-image="graphics/Woman_Raising_Hand.jpg" background-size="contain" background-position="right" background-repeat="no-repeat"}
@@ -447,15 +453,17 @@ analysis and writing reports. We used the GUI, menus, and dialog boxes in SPSS
 to do data management and analysis. We updated data files manually. We created
 tons of files, saving to a new filename as changes accrued. That led to
 confusing proliferation of folders and files with little planned structure. It
-was hard to tell who had last edited various files and which versions to use. We
-retyped or pasted results from SPSS output into Word documents then spent lots
-of time formatting them. If we made a mistake, it could takes hours or even days
-to re-do things. Over time I learned some strategies to improve that workflow,
-such as using SPSS syntax files to automate tasks, adding comments in the syntax
-files, adopting file naming conventions, and so on. But part of the problem was
-that the software tools weren't integrated and lacked support for better 
-workflows. Technology has vastly improved since my student days, but many
-evaluators still use manual workflows like those I just described. They don't
+was hard to tell who had last edited various files and which versions to use. 
+Who hasn't seen a project accumulate files like "Final Report", "Final Report2",
+"Final Report 11-01", "Final Final Report" and so on? We retyped or pasted
+results from SPSS output into Word documents then spent lots of time formatting
+them. If we made a mistake, it could takes hours or even days to re-do things.
+Over time I learned some strategies to improve that workflow, such as using SPSS
+syntax files to automate tasks, switching to R instead of SPSS, adding comments
+in the syntax files, adopting file naming conventions, and so on. But part of
+the problem was that the software tools weren't integrated and lacked support
+for better workflows. Technology has vastly improved since my student days, but
+many people still use manual workflows like those I just described. They don't
 know what is possible now. Given what I've learned in recent years, if asked to
 resume using those older tools and workflows, I'd probably break out my favorite
 Spock quote.
@@ -484,6 +492,7 @@ of stone knives and bearskins."
 * [RStudio Desktop](https://posit.co/download/rstudio-desktop/) 
   [@RStudio-Team-RN8351], an editor
 * [Quarto](https://quarto.org) [@Allaire-RN8427], for dynamic documents 
+* [TinyTeX](https://yihui.org/tinytex/), for nice PDF output
 * [Git](https://git-scm.com/) [@Torvalds-RN3929], for version control
 * [GitHub.com](https://github.com), for sharing & collaborating on code
 
@@ -492,13 +501,13 @@ of stone knives and bearskins."
 ::: {.notes}
 Fortunately, there's a better way to do analyses and write reports. It depends
 on open-source software and learning new workflows. These are my favorite tools
-now. R is a fantastic option for managing and analyzing data and creating
-figures. RStudio Desktop is an excellent editor for working with R that also
-simplifies using Quarto, Git, and GitHub. Quarto supports creating dynamic
-documents that render to a variety of output formats (HTML, PDF, Word,
-PowerPoint, etc.), while Git and GitHub together support version control,
-collaboration, and sharing materials. Collectively, they comprise an elegant,
-integrated set of tools for doing reproducible analyses and reports. 
+now. As you all know, R is a fantastic tool for managing and analyzing data
+and creating figures. RStudio Desktop is an excellent editor for working with R
+that also simplifies using Quarto, Git, and GitHub. Quarto supports creating
+dynamic documents that render to a variety of output formats (HTML, PDF, Word,
+PowerPoint, etc.), TinyTex helps Quarto produce nice PDF output, while Git and 
+GitHub together support version control, collaboration, and sharing materials. Collectively, they comprise an elegant, integrated set of tools for doing 
+reproducible analyses and reports.
 :::
 
 ## Dynamic Documents Via Quarto + R
@@ -889,7 +898,7 @@ That's the best way make sure the whole thing works correctly.
 Leverage the inhuman patience of computers. They're great at long, repetitive
 tasks that bore or fatigue humans into making errors. If something is
 mind-numbingly tedious, write code to get the computer to do it for you.
-Rememeber: computers are also literal-minded idiots. They do what you tell them
+Remember: computers are also literal-minded idiots. They do what you tell them
 to do, whether or not that makes sense or is what you intended. Put your time
 into giving them the right instructions and checking that you got the right
 results.
