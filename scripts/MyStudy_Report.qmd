@@ -42,7 +42,7 @@ knitr:
 
 # Purpose
 This report summarizes findings from analyses of the MyStudy data, which is 
-simulated, fictional example data for my AEA 2024 presentation [@Pierce-RN8577]. 
+simulated, fictional example data for my AARUG 2024 presentation [@Pierce-RN8655]. 
 It is formatted the way I would handle an internal report for the study team 
 rather than how I would handle a deliverable to an external stakeholder, so it 
 emphasizes clarity and technical detail for repeatability, reproducibility, and 

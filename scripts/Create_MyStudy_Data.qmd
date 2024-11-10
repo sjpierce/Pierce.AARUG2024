@@ -40,8 +40,8 @@ knitr:
 ---
 
 # Purpose
-This script prepares simulated, fictional example data for my AEA 2024 
-presentation [@Pierce-RN8577].
+This script prepares simulated, fictional example data for my AARUG 2024 
+presentation [@Pierce-RN8655].
 
 ::: {.callout-tip}
 If this were for a real study, we would probably have a script for importing the 
