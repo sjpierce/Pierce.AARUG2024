@@ -453,20 +453,22 @@ analysis and writing reports. We used the GUI, menus, and dialog boxes in SPSS
 to do data management and analysis. We updated data files manually. We created
 tons of files, saving to a new filename as changes accrued. That led to
 confusing proliferation of folders and files with little planned structure. It
-was hard to tell who had last edited various files and which versions to use. 
+was hard to tell who had last edited various files and which versions to use.
 Who hasn't seen a project accumulate files like "Final Report", "Final Report2",
 "Final Report 11-01", "Final Final Report" and so on? We retyped or pasted
 results from SPSS output into Word documents then spent lots of time formatting
 them. If we made a mistake, it could takes hours or even days to re-do things.
 Over time I learned some strategies to improve that workflow, such as using SPSS
-syntax files to automate tasks, switching to R instead of SPSS, adding comments
-in the syntax files, adopting file naming conventions, and so on. But part of
-the problem was that the software tools weren't integrated and lacked support
-for better workflows. Technology has vastly improved since my student days, but
-many people still use manual workflows like those I just described. They don't
-know what is possible now. Given what I've learned in recent years, if asked to
-resume using those older tools and workflows, I'd probably break out my favorite
-Spock quote.
+syntax files to automate tasks, adding comments in my code, adopting file naming
+conventions, and so on. Switching to R instead of SPSS brought real benefits,
+but did not solve all the workflow issues on its own. For example, running an R 
+script still left me manually moving results into Word documents. It didn't 
+solve the mess of files, or the version control issues. Part of the problem was
+that the software tools weren't integrated and lacked support for better
+workflows. Technology has vastly improved since my student days, but many people
+still use manual workflows like those I just described. They don't know what is
+possible now. Given what I've learned in recent years, if asked to resume using
+those older tools and workflows, I'd probably break out my favorite Spock quote.
 :::
 
 ## Spock {background-image="graphics/Spock.jpg" background-position="top" }
@@ -500,14 +502,16 @@ of stone knives and bearskins."
 
 ::: {.notes}
 Fortunately, there's a better way to do analyses and write reports. It depends
-on open-source software and learning new workflows. These are my favorite tools
-now. As you all know, R is a fantastic tool for managing and analyzing data
-and creating figures. RStudio Desktop is an excellent editor for working with R
-that also simplifies using Quarto, Git, and GitHub. Quarto supports creating
-dynamic documents that render to a variety of output formats (HTML, PDF, Word,
-PowerPoint, etc.), TinyTex helps Quarto produce nice PDF output, while Git and 
-GitHub together support version control, collaboration, and sharing materials. Collectively, they comprise an elegant, integrated set of tools for doing 
-reproducible analyses and reports.
+on additional open-source software and learning new workflows. These are my
+favorite tools now. As you all know, R is a fantastic tool for managing and
+analyzing data and creating figures. RStudio Desktop is an excellent editor for
+working with R that also simplifies using Quarto, TinyTeX, Git, and GitHub.
+These other tools may be less familiar to you than R and RStudio. Quarto
+supports creating dynamic documents that render to a variety of output formats
+(HTML, PDF, Word, PowerPoint, etc.), TinyTex helps Quarto produce nice PDF
+output, while Git and GitHub together support version control, collaboration,
+and sharing materials. Collectively, they comprise an elegant, integrated set of
+tools for doing reproducible analyses and reports.
 :::
 
 ## Dynamic Documents Via Quarto + R
@@ -553,8 +557,8 @@ contains data about references you cite in the report, while the CSL file tells
 Quarto how to format the citations and the reference list. I'm using similar
 file names to stay organized: they show which script creates the report. Saving
 all the files follows the preservation principle. One can rapidly reproduce the
-report by re-rendering the script, or fix an error in the script then render
-again to automate updating the report.
+report by re-rendering the script, or fix an error in the script or the data 
+then render again to automate updating the report.
 :::
 
 ## A Research Compendium ... {background-image="graphics/pexels-anete-lusina-4792285.jpg"}
